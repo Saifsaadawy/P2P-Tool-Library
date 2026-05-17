@@ -1,0 +1,94 @@
+/* ── Tools Pages ─────────────────────────────────── */
+.tools-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.tools-header h2 { font-size: 1.4rem; }
+
+/* Search bar */
+.search-bar {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.search-bar input  { width: 220px; }
+.search-bar select { padding: 0.5rem 0.8rem; border: 1px solid #ccc; border-radius: 8px; font-size: 0.9rem; }
+
+/* Tools grid */
+.tools-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.tool-card {
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid #e8e8e8;
+    overflow: hidden;
+    transition: box-shadow 0.15s;
+    cursor: pointer;
+}
+
+.tool-card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+
+.tool-card img {
+    width: 100%;
+    height: 160px;
+    background: #f0f0f0;
+}
+
+.tool-card-body { padding: 0.9rem 1rem; }
+.tool-card-body h3 { font-size: 1rem; margin-bottom: 0.3rem; }
+.tool-card-body .price { font-size: 0.95rem; color: #3b5bdb; font-weight: 500; }
+.tool-card-body .category { font-size: 0.8rem; color: #888; margin-bottom: 0.5rem; }
+
+/* Tool detail page */
+.tool-detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 700px) { .tool-detail-layout { grid-template-columns: 1fr; } }
+
+.tool-detail-img {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #e0e0e0;
+    background: #f8f8f8;
+    max-height: 360px;
+}
+
+.tool-info h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+.tool-info .daily-rate { font-size: 1.2rem; color: #3b5bdb; font-weight: 600; margin-bottom: 1rem; }
+
+.tool-meta { margin: 1rem 0; }
+.tool-meta-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 0.9rem;
+}
+.tool-meta-row span:first-child { color: #888; }
+
+/* Add tool form */
+.add-tool-form {
+    background: #fff;
+    border-radius: 12px;
+    padding: 1.8rem;
+    max-width: 620px;
+    margin: 1.5rem auto;
+    border: 1px solid #e8e8e8;
+}
+
+.add-tool-form h2 { font-size: 1.3rem; margin-bottom: 1.4rem; }

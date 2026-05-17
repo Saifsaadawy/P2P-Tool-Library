@@ -1,0 +1,41 @@
+/* ── Reservations Page ───────────────────────────── */
+.reservations-container {
+    max-width: 900px;
+    margin: 1.5rem auto;
+    padding: 0 1rem;
+}
+
+.reservations-container h2 { font-size: 1.4rem; margin-bottom: 1.2rem; }
+
+.reservation-card {
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    padding: 1.2rem 1.4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.reservation-card:hover { border-color: #b0b8f0; }
+
+.reservation-info h3 { font-size: 1rem; margin-bottom: 0.3rem; }
+.reservation-info p  { font-size: 0.88rem; color: #666; margin-bottom: 0.2rem; }
+
+.reservation-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-end;
+}
+
+.qr-code {
+    width: 80px;
+    height: 80px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 4px;
+}
